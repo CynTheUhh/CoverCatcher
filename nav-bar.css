@@ -1,0 +1,47 @@
+nav {
+    margin-bottom: 1px;
+    padding: 0.1rem;
+    text-align: center;
+    background-color: #000000b2;
+    position: relative;
+}
+
+#nav-logo {
+    width: 50px;
+    margin: 0;
+    margin-left: 15px;
+    margin-top: 15px;
+    display: block;
+}
+
+#nav-bar {
+    margin: 0px;
+    margin-top: -65px;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    list-style-type: none;
+}
+
+#nav-bar > li {
+    margin: 0 50px;
+    padding: 0;
+    display: inline-block;
+}
+
+#nav-bar > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.55em;
+    font-weight: bold;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+body {
+    margin: 0px;
+}
