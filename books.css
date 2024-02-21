@@ -10,29 +10,26 @@ body {
     height: 700px;
     width: 200px;
     margin: 0px;
-    background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: contain; 
     background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .bookshelf {
     padding-top: 50px;
     display: flex;
-    gap: 10px;
+    justify-content: center;
 }
 
 .book:hover {
-    background-color: blue;
     transform: scale(1.1);
 }
 
 h1 {
-    position: relative;
     margin: 0px;
-    text-align: center;
     color: rgb(0, 0, 0);
     white-space: nowrap;
     transform: rotate(90deg);

@@ -1,3 +1,11 @@
+body {
+    background-image: url(images/table.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(29, 24, 2);
+    background-attachment: fixed;
+}
+
 .book-card {
     width: 250px;
     height: 350px;
@@ -11,5 +19,5 @@
     flex-wrap: wrap;
     gap: 20px;
     padding-top: 110px;
-    padding-left: 15px;
+    justify-content: center;
 }
