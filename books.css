@@ -1,18 +1,9 @@
 body {
-    background-image: url();
-    background-size: cover;
+    background-image: url(images/table.jpg);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-color: rgb(29, 24, 2);
     background-attachment: fixed;
-}
-
-.spine-title {
-    position: relative;
-    margin: 0px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    white-space: nowrap;
-    transform: rotate(90deg);
 }
 
 .book {
@@ -23,14 +14,55 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: contain; 
+    background-repeat: no-repeat;
 }
 
 .bookshelf {
-    padding-top: 100px;
+    padding-top: 50px;
     display: flex;
     gap: 10px;
 }
 
 .book:hover {
     background-color: blue;
+    transform: scale(1.1);
 }
+
+h1 {
+    position: relative;
+    margin: 0px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+    transform: rotate(90deg);
+}
+
+#book-1 {
+    background-image: url(images/book-spines1.jpg);
+}
+
+#book-2 {
+    background-image: url(images/book-spines2.png);
+}
+
+#book-3 {
+    background-image: url(images/book-spines3.png);
+}
+
+#book-4 {
+    background-image: url(images/book-spines4.png);
+}
+
+#book-5 {
+    background-image: url(images/book-spines5.png);
+}
+
+#book-6 {
+    background-image: url(images/book-spines6.png);
+}
+
+#book-7 {
+    background-image: url(images/book-spines7.png);
+}
+
