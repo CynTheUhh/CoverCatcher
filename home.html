@@ -12,14 +12,13 @@
         <nav>
             <div class="search-bar">
                 <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">▼</button>
-                    <div id="myDropdown" class="dropdown-content">
-                      <a href="#name">Name</a>
-                      <a href="#author">Author</a>
-                      <a href="#genre">Genre</a>
-                    </div>
+                    <select name="Search-options" id="search-by">
+                    <option value="Name">Name</option>
+                    <option value="Author">Author</option>
+                    <option value="Genre">Genre</option>
+                  </select>
                 </div>
-                <input type="text" placeholder="">
+                <input type="text" placeholder="" id="search-field">
                 <input type="submit" class="button" id="button">
             </div>
         </nav>
