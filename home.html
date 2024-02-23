@@ -6,7 +6,14 @@
     <title>Home</title>
     <link rel="stylesheet" href="search.css">
     <link rel="stylesheet" href="books.css">
+    <link rel="stylesheet" href="welcome.css">
+<div class="scrollmenu">    
+    <div class="welcome">
+        <h2>Genre-hopping made easy: find your next favorite 'page-turner'!</h2>
+        <h3 id="start">Click here to get started!</h3>
+    </div>
 <body>
+    <main>
     <header>
         <nav>
             <div class="search-bar">
@@ -15,37 +22,51 @@
                     <option value="Name">Name</option>
                     <option value="Author">Author</option>
                     <option value="Genre">Genre</option>
-                  </select>
+                    </select>
                 </div>
                 <input type="text" placeholder="" id="search-field">
                 <input type="submit" class="button" id="button">
             </div>
         </nav>
     </header>
-    <main>
         <div class="bookshelf">
+        <a href="./results.html?search=Romance&option=Genre">
             <div class="book" id="book-1">
                 <div class="spine"><h1 id="Romance">Romance</h1></div>
             </div>
+        </a>
+        <a href="./results.html?search=Science%20Fiction&option=Genre">
             <div class="book" id="book-2">
                 <div class="spine"><h1 class="Science-Fiction" id="Science">Science</h1><h1 class="Science-Fiction" id="Fiction">Fiction</h1></div>
             </div>
+        </a>
+        <a href="./results.html?search=Fantasy&option=Genre">
             <div class="book" id="book-3">
                 <div class="spine"><h1 id="Fantasy">Fantasy</h1></div>
             </div>
+        </a>    
+        <a href="./results.html?search=Horror&option=Genre">
             <div class="book" id="book-4">
                 <div class="spine"><h1 id="Horror">Horror</h1></div>
             </div>
+        </a>    
+        <a href="./results.html?search=Mystery&option=Genre">
             <div class="book" id="book-5">
                 <div class="spine"><h1 id="Mystery">Mystery</h1></div>
             </div>
+        </a> 
+        <a href="./results.html?search=Humor&option=Genre">  
             <div class="book" id="book-6">
-                <div class="spine"><h1 id="Random">Random</h1></div>
+                <div class="spine"><h1 id="Humor">Humor</h1></div>
             </div>
+        </a>     
+        <a href="about.html">
             <div class="book" id="book-7">
                 <div class="spine"><h1 id="About">About</h1></div>
             </div>
+        </a>    
     </main>
     <script src="main.js"></script>
 </body>
+</div>
 </html>

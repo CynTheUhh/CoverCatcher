@@ -4,6 +4,15 @@ body {
     background-repeat: no-repeat;
     background-color: rgb(29, 24, 2);
     background-attachment: fixed;
+    margin: 0;
+}
+
+main {
+    min-width: 100%;
+}
+
+a {
+    text-decoration: none; 
 }
 
 .book {
@@ -19,7 +28,7 @@ body {
 }
 
 .bookshelf {
-    padding-top: 50px;
+    padding-top: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
@@ -94,7 +103,7 @@ h1 {
     align-items: center;
 }
 
-#Random {
+#Humor {
     background: #DFBD69;
     background: radial-gradient(circle farthest-corner at center center, #DFBD69 50%, #926F34 100%);
     -webkit-background-clip: text;
