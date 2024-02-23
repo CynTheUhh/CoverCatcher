@@ -32,15 +32,23 @@ body {
 
 h1 {
     margin: 0px;
-    color: rgb(255, 255, 255);
     white-space: nowrap;
 }
 
 #Romance {
+    color: #e1c05b;
+}
+
+#book-1 > .spine{
+    background: rgb(91,53,13);
+    background: linear-gradient(360deg, rgba(91,53,13,1) 35%, rgba(166,124,55,1) 100%);
     transform: rotate(90deg);
-    color: #000000;
-    background-color: #8a6227;
-    height: 95px;
+    height: 100px;
+    width: 170px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Science-Fiction {
@@ -49,14 +57,6 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-/* #Science {
-    padding-bottom: 60px;
-}
-
-#Fiction {
-    padding-bottom: 10px;
-} */
 
 #Fantasy {
     transform: rotate(90deg);
@@ -81,10 +81,12 @@ h1 {
     -webkit-text-fill-color: transparent;  
     text-align: center;
 }
+
 #book-5 > .spine{
-    background-color: #2b360b;
+    background: rgb(38,49,9);
+    background: linear-gradient(180deg, rgba(38,49,9,1) 35%, rgba(30,42,6,1) 100%);
     transform: rotate(90deg);
-    height: 70px;
+    height: 82px;
     width: 170px;
     text-align: center;
     display: flex;
@@ -93,24 +95,46 @@ h1 {
 }
 
 #Random {
-    transform: rotate(90deg);
-    background-color: #3d0b14;
-    color: #f2bb60;    
-    height: 150px;
+    background: #DFBD69;
+    background: radial-gradient(circle farthest-corner at center center, #DFBD69 50%, #926F34 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    text-align: center;
+}
+
+#book-6 > .spine{
+    background: rgb(50,9,15);
+    background: linear-gradient(90deg, rgba(50,9,15,1) 35%, rgba(80,18,27,1) 100%);
+    height: 80px;
     width: 150px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #About {
-    background-color: #370905; 
-    color: #f2bb60;
-    height: 50px;
-    width: 150px;
+    background: #DFBD69;
+    background: radial-gradient(circle farthest-corner at center center, #DFBD69 50%, #926F34 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
     text-align: center;
 }
 
+#book-7 > .spine{
+    background: rgb(65,17,6);
+    background: linear-gradient(180deg, rgba(65,17,6,1) 35%, rgba(62,25,21,1) 100%);
+    transform: rotate(90deg);
+    height: 149px;
+    width: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #book-1 {
-    background-image: url(images/book-spines1.jpg);
+    background-image: url(images/book-spines1.png);
 }
 
 #book-2 {
