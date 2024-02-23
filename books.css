@@ -8,7 +8,7 @@ body {
 
 .book {
     height: 700px;
-    width: 200px;
+    min-width: 200px;
     margin: 0px;
     display: flex;
     justify-content: center;
@@ -32,7 +32,70 @@ h1 {
     margin: 0px;
     color: rgb(255, 255, 255);
     white-space: nowrap;
+}
+
+#Romance {
     transform: rotate(90deg);
+    color: #000000;
+    background-color: #8a6227;
+    height: 95px;
+}
+
+.Science-Fiction {
+    background: #DFBD69;
+    background: radial-gradient(circle farthest-corner at center center, #DFBD69 50%, #926F34 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#Science {
+    padding-bottom: 60px;
+}
+
+#Fiction {
+    padding-bottom: 10px;
+}
+
+#Fantasy {
+    transform: rotate(90deg);
+    background: #DFBD69;
+    background: radial-gradient(circle farthest-corner at center center, #DFBD69 50%, #926F34 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#Horror {
+    background: #DFBD69;
+    background: radial-gradient(circle farthest-corner at center center, #DFBD69 50%, #926F34 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 180px;
+}
+
+#Mystery {
+    transform: rotate(90deg);
+    background-color: #2b360b;
+    color: #f2bb60;    
+    height: 70px;
+    width: 150px;
+    text-align: center;
+}
+
+#Random {
+    transform: rotate(90deg);
+    background-color: #3d0b14;
+    color: #f2bb60;    
+    height: 150px;
+    width: 150px;
+    text-align: center;
+}
+
+#About {
+    background-color: #370905; 
+    color: #f2bb60;
+    height: 50px;
+    width: 150px;
+    text-align: center;
 }
 
 #book-1 {
