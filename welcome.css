@@ -4,12 +4,14 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding-left: 225px;
 }
 
 h2 {
     font-size: 60px;
     background-color: rgba(0, 0, 0, 0.521);
     color: white;
+    border-radius: 10px;
 }
 
 #start {
@@ -20,6 +22,7 @@ h2 {
     justify-content: center;
     align-items: center;
     display: flex;
+    border-radius: 10px;
 }
 
 div.scrollmenu {
@@ -30,6 +33,6 @@ div.scrollmenu {
   
 .scrollmenu::-webkit-scrollbar {
     display: none;
-    
 }
+
 

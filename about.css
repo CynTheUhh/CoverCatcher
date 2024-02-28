@@ -6,3 +6,31 @@ body {
     background-attachment: fixed;
 }
 
+.about {
+    display: flex;
+    width: 1200px;
+    padding: 30px;
+    margin: 2px;
+}
+
+#about-top {
+    margin-top: 150px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    box-shadow: 0 0 15px #EBF2FA;
+    background-color: rgba(0, 0, 0, 0.521);
+
+    border-radius: 25px;
+}
+
+#about-bottom {
+    height: 400px;
+    justify-content: center;
+}
+
+.center-contain{
+    display: flex;
+    justify-content: center;
+}
+
