@@ -1,3 +1,4 @@
+apiURL = "https://openlibrary.org/search.json?"
 const queryString = window.location.search;
 console.log(queryString);
 
@@ -9,38 +10,53 @@ console.log(search);
 const option = urlParams.get('option');
 console.log(option);
 
-async function makeApICall() {
+
+if (option == "Name"){
+    console.log("name boi");
+    apiURL += "title=";
+}
+else if(option == "Author"){
+    console.log("author boi");
+    apiURL += "author=";
+}
+else if(option == "Genre"){
+    console.log("genre boi");
+    apiURL += "q=";
+}
+
+apiURL += search;
+apiURL += "&limit=25"
+console.log(apiURL)
+
+
+
+
+
+async function makeApICall(url) {
     try {
-        const retrievedData = await fetch("https://openlibrary.org/search.json?q=${search}");
+        const retrievedData = await fetch(url);
         //console.log(retrievedData);
-        return retrievedData;    
+        return retrievedData.json();    
     }
     catch (error) {
         console.log(error);
     }
 }
 
-// async function converttoJSON() {
-//     const jsonData = await makeApICall();
-//     return jsonData.json();
-// }
 
-// const libData = converttoJSON();
-// libData.then((res)=>{
-//     //res is the whole response
-//     //res.docs is a list of book object with lots of information
-//     console.log(res);
-//     const books =  document.getElementsByClassName("book-card")
-//     let apicounter = 0
-//     for(let i = 0; i < books.length ;i++){
-//         while(!res.docs[apicounter].isbn){
-//             apicounter++
-//         }
-//         let isbn = res.docs[apicounter].isbn[0]
-//         apicounter++
-//         books[i].style.backgroundImage = "url('https://covers.openlibrary.org/b/isbn/"+isbn+"-L.jpg')";
-//     }
-//     console.log(res.docs[0].isbn[0])
-// })
+ const libData = makeApICall(apiURL);
+ libData.then((res)=>{
+    //res is the whole response
+    //res.docs is a list of book object with lots of information
+    console.log("we have "+ res.numFound+" results")
+    console.log(res.docs);
+    const books =  document.getElementsByClassName("book-card")
+    for(let i = 0; i < books.length ;i++){
+        let ID = res.docs[i].cover_i;
+        let title = res.docs[i].title;
+        let author_name = res.docs[i].author_name[0];
+        books[i].style.backgroundImage = "url('https://covers.openlibrary.org/b/id/"+ID+"-L.jpg')";
+    }
+})
 
 
