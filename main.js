@@ -11,18 +11,12 @@ submitbutton.addEventListener('click', ()=>{
 })
 
 
-let anchorSelector = 'a[href^="#bookshelf"]';
-     
-let anchorList = 
-    document.querySelectorAll(anchorSelector);
-    anchorList.forEach(link => {
-      link.onclick = function (e) {
-      e.preventDefault();
-let destination = 
-    document.querySelector(this.hash);
-         
-    destination.scrollIntoView({
-      behavior: 'smooth'
-    });
-  }
-});
+let scrollRightButton = document.querySelector('a[href="#bookshelf"]');
+
+scrollRightButton.onclick = function (e) {
+  e.preventDefault();
+  let destination = document.querySelector(this.hash);   
+  destination.scrollIntoView({
+    behavior: 'smooth'
+  });
+}
