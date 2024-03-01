@@ -28,10 +28,6 @@ apiURL += search;
 apiURL += "&limit=25"
 console.log(apiURL)
 
-
-
-
-
 async function makeApICall(url) {
     try {
         const retrievedData = await fetch(url);
@@ -42,7 +38,6 @@ async function makeApICall(url) {
         console.log(error);
     }
 }
-
 
  const libData = makeApICall(apiURL);
  libData.then((res)=>{
